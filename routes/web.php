@@ -14,10 +14,19 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
+
 Route::get('/index', function (){
     return view('index');
 });
 
+
+Route::get('/courses', function(){
+return view('courses');
+});
+
+Route::get('/details', function(){
+    return view('details');
+});
 
 
 

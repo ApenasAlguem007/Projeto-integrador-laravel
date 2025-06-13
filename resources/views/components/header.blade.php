@@ -28,7 +28,7 @@
         <img src = "{{asset('images/Aurora-Logo-White.png')}}" alt="logo" height="105" width="105" class="d-lg-none">
         <a class="header-link" href="{{asset('index')}}" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-house-door"></i> Home </a>
         <a class="header-link" href="#" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-info-circle"></i> About </a>
-        <a class="header-link" href="./courses.php" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-play-circle"></i> Courses </a>
+        <a class="header-link" href="{{asset('courses')}}" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-play-circle"></i> Courses </a>
         <a class="header-link" href="#" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-currency-dollar"></i> Donate </a>
         <a class="header-link" href="{{asset('register')}}" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-person-add"></i> Sign Up </a>
         <a class="header-link" href="#" style="color: rgba(255, 255, 255, 0.2);"><i class="bi bi-box-arrow-in-right"></i> Sign In </a>

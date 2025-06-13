@@ -11,7 +11,7 @@
             <h3 class='titulo-footer'>Aurora</h3>
             <a href="{{asset('index')}}"></i>Home</a>
             <a href="#"></i>About</a>
-            <a href="./courses.php"></i>Courses</a>
+            <a href="{{asset('courses')}}"></i>Courses</a>
             <a href="#"></i>Donate</a>
             <a href="#"></i>Sign in</a>
             <a href="{{asset('register')}}"></i>Sign up</a>             
