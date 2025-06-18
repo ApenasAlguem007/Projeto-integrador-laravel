@@ -50,7 +50,8 @@
  
         <div class="register-form">
  
-            <form action="{{ route('register') }}" method="POST">
+            <form action="{{ route('cadastro.adicionar.post') }}" method="POST">
+                @csrf
                 
  
  
@@ -60,31 +61,31 @@
  
  
                 <div class="container-form">
-                    <input type="text" name="name" :value="__('Name')" id="name" required>
-                    <label for="name"> Username </label>
+                    <input type="text" name="nome" id="name" required>
+                    <label for="name"> Nome </label>
                 </div>
  
  
                 <div class="container-form">
-                    <input type="email" name="email" :value="__('Email')" id="email" required>
+                    <input type="email" name="email" id="email" required>
                     <label for="email"> E-mail </label>
                 </div>
  
            
                 <div class="container-form">
-                    <input type="password" name="password" :value="__('Password')" id="password" required>
-                    <label for="password"> Password </label>
+                    <input type="password" name="senha" id="password" required>
+                    <label for="password"> Senha </label>
                 </div>
  
  
                 <div class="checkbox-form">
-                    <input type="checkbox" name="terms" id="terms" required>
+                    <input type="checkbox" name="termos" id="terms" required>
                     <label for="terms"> Accept <a class="font-semibold" href=""> Terms of Use </a> </label>
                 </div>
  
  
                 <div class="submit-form">
-                    <button type="submit" name="submit-button">  {{ __('Register') }}</button>
+                    <button type="submit" name="submit-button"> Register </button>
                 </div>
                
  
