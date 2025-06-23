@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cadastro;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 
@@ -12,8 +12,9 @@ class CadastroController extends Controller
 
         if($request->method() == "POST"){
             $data = $request -> all();
+            $data['terms'] = $request->has('terms');
 
-            Cadastro::create($data);
+            User::create($data);
 
             return view("index");
         }
@@ -21,7 +22,7 @@ class CadastroController extends Controller
 
 
     public function visualizar(){
-        $find = Cadastro::get();
+        $find = User::get();
         return view('index', compact ('find'));
     }
 

@@ -61,7 +61,7 @@
  
  
                 <div class="container-form">
-                    <input type="text" name="nome" id="name" required>
+                    <input type="text" name="name" id="name" required>
                     <label for="name"> Nome </label>
                 </div>
  
@@ -73,13 +73,13 @@
  
            
                 <div class="container-form">
-                    <input type="password" name="senha" id="password" required>
+                    <input type="password" name="password" id="password" required>
                     <label for="password"> Senha </label>
                 </div>
  
  
                 <div class="checkbox-form">
-                    <input type="checkbox" name="termos" id="terms" required>
+                    <input type="checkbox" name="terms" id="terms" value="1" required>
                     <label for="terms"> Accept <a class="font-semibold" href=""> Terms of Use </a> </label>
                 </div>
  
