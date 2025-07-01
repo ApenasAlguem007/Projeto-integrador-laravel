@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Requests\RegisterRequest;
 
 
 class CadastroController extends Controller
 {
-    public function adicionar(Request $request){
+    public function store(RegisterRequest $request){
 
         if($request->method() == "POST"){
             $data = $request -> all();
@@ -16,14 +17,14 @@ class CadastroController extends Controller
 
             User::create($data);
 
-            return view("index");
+            return redirect('/')-> with('success');
         }
     }
 
 
-    public function visualizar(){
+    public function show(){
         $find = User::get();
-        return view('index', compact ('find'));
+        return view("register", ["page" => "register"], compact ('find'));
     }
 
 

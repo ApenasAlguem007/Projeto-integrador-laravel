@@ -2,63 +2,36 @@
 
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\ProfileController;
-use App\Models\Cadastro;
 use Illuminate\Support\Facades\Route;
 
+use function Laravel\Prompts\password;
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home', ['page' => 'home']);
+})->name('home');
 
 
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
+Route::get('/about', function () {
+    return view('about', ['page' => 'about']);
+})->name('about');
 
 
-// rota Post
-
-Route::post('/cadastro', [CadastroController::class,'adicionar'])->name('cadastro.adicionar.post');
-
-
-// Rota Get
-Route::get('/cadastro', [CadastroController::class,'adicionar'])->name('cadastro.adicionar.get');
+Route::get('/courses', function () {
+    return view('courses', ['page' => 'courses']);
+})->name('courses');
 
 
-Route::get('/cadastro', function (){
-    return view('cadastro');
-});
-
-Route::get('/index', function (){
-    return view('index');
-});
-
-Route::get('/signin', function (){
-    return view('signin');
-});
+Route::get('/reset-password', function(){
+    return view('reset-password', ['page' => 'reset-password']);
+})->name('reset-password');
 
 
-Route::get('/courses', function(){
-return view('courses');
-});
-
-Route::get('/details', function(){
-    return view('details');
-});
+Route::get('/register', [CadastroController::class, 'show'])->name('register');
 
 
+Route::post('/register/store', [CadastroController::class, 'store'])->name('register.store');
 
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-
-Route::get('/register', function (){
-    return view('register');
-});
-
-require __DIR__.'/auth.php';
+Route::get('/login', function () {
+    return view('login', ['page' => 'login']);
+})->name('login');
