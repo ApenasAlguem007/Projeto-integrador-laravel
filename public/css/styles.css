@@ -36,31 +36,8 @@
     --aurora-color-animation: color 0.25s ease;;
  
 }
-
-.link-hover{
-     background: transparent;
-    border: none;
-    color: #e6e6e6;
-    border-radius: var(--aurora-border-radius);
-    width: 100%;
-    height: 25px;
-    font-size: 12px;
-    margin: 1rem;
-} 
-
  
-.link-hover:hover{
-    background-color: rgba(32, 32, 32, 0.75);
-    transition: 1s ease;
-
-}
-
-a:hover{
-    transition: var(--aurora-color-animation);
-    color: #A6A6A6;
-}
-
-
+ 
 .margin-height {
     margin-top: var(--aurora-margin-small);
     margin-bottom: var(--aurora-margin-small);
@@ -168,6 +145,7 @@ body {
  
 .aurora-main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
@@ -491,81 +469,200 @@ body {
 
 /*  Home css */
 
-.container-home{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        border: 2.5px solid #ffffff;
-        border-left: none;
-        border-right: none;
-        margin-bottom: 30px;
-    }
+
+
  
-    .titulo-home {
-        padding: 10px;
-        text-align: center;
-        color: rgb(255, 255, 255 , 0.8);
-        font-size: 4.25em;
-        margin-top: 20px;
-        width: 50%;
-        margin-left: 200px;
-       
-    }
+/* Home Kauan */
  
-    .img-home {
-        width: 700px;
-        margin-right: 175px;
-    }
+ 
+.titulo-home {
+    text-align: center;
+    color: rgb(255, 255, 255 , 0.8);
+    font-size: 1rem;
    
-    #btn-home {
-        width: 60%;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #2E3146;
-        color: white;
-        text-decoration: none !important;
-        text-align: center;
-        margin-left: 150px;
-    }
+}
  
-    .titulo-corpo {
-        color: rgb(255, 255, 255 , 0.6);
-        font-size: 1.6em;
-    }
  
-    .caixa-texto {
-        margin: auto;
-        background-color: #252525;
-        width: 40%;
-        max-height: 50px;
-        text-align: center;
-        justify-content: center;
-    }
+#btn-home {
+    border-radius: 10px;
+    background-color: #2E3146;
+    color: white;
+    text-decoration: none !important;
+    text-align: center;
+}
  
-    .titulo-cursos {
-        font-size: 2em !important;
-    }
  
-    .img-cursos {
-        width: 50%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
+.titulo-corpo {
+    color: rgb(255, 255, 255 , 0.6);
+    font-size: 1rem;
+}
  
-    .caixa-img {
-        margin: auto;
-        width: 50%;
-        border-radius: 20px;
-        background-color: #303030;
-        margin-bottom: 20px;
-    }
  
-    .corpo-home {
-        border: 2.5px solid #ffffff;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        margin-bottom: 30px;
-    }
+.caixa-texto {
+    margin: auto;
+    background-color: #252525;
+    text-align: center;
+    justify-content: center;
+}
+ 
+ 
+.titulo-cursos {
+    font-size: 1rem;
+}
+ 
+ 
+.img-cursos {
+    height: auto;
+    display: block;
+    margin: auto;
+}
+ 
+ 
+.caixa-img {
+    margin: auto;
+    border-radius: 20px;
+    background-color: #303030;
+}
+ 
+ 
+
+
+
+
+
+    /* Our Courses css */
+
+    .h1{
+    text-align: center;
+}
+ 
+.titulo-courses {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.modelo{
+    display: block;
+    margin: auto;
+    border: 1px solid #2E3146;
+    background-color: #2E3146;
+    border-radius: 10px;
+    width: 50%;
+}
+ 
+ 
+ 
+ 
+ 
+.hard{
+    background-color: #303030;
+    text-align: center;
+    width: 500px;
+    height: 450px;
+     display: block;
+     margin: auto;
+     padding: 10px;
+     border: 1px solid black!important;
+     border-color: white !important;
+     border-radius:10px ;
+}
+ 
+.detalhes{
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #2E3146;
+    border-radius: 10px;
+    background-color: #2E3146;
+    width: 60%;
+}
+ 
+ 
+ 
+.detalhes-btn{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #2E3146;
+    color: white;
+}
+ 
+ 
+ 
+.network{
+    width: 500px;
+    height: 480px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black!important;
+    border-color: white !important;
+    border-radius:10px ;
+    background-color: #303030;
+}
+ 
+.detalhes1{
+    text-align: center;
+    border: 1px solid #2E3146;
+    border-radius: 10px;
+    background-color: #2E3146;
+}
+ 
+ 
+.soft{
+    width: 500px;
+    height: 480px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: 1px solid black!important;
+    border-color: white !important;
+    border-radius:10px ;
+    background-color: #303030;
+}
+ 
+#carouselExampleControls {
+    margin-top: 20px;
+   
+}
+ 
+.hard,
+.network,
+.soft {
+    background-color: #303030;
+    text-align: center;
+    width: 500px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid white !important;
+    border-radius: 10px;
+    height: auto; /* Permite que o conteúdo não transborde */
+}
+ 
+.detalhes {
+    margin: 20px auto 0;
+    text-align: center;
+    border: 1px solid #2E3146;
+    border-radius: 10px;
+    background-color: #2E3146;
+    width: 60%;
+}
+ 
+.detalhes-btn {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #2E3146;
+    color: white;
+    padding: 8px 0;
+    border: none;
+    text-decoration: none !important;
+   
+}
+ 
+.detalhes-botao {
+    text-decoration: none !important;
+    color: white;
+}
+ 
+ 
