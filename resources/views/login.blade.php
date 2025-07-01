@@ -15,14 +15,20 @@
  
  
                 <div class="form-container">
-                    <input type="text" name="email" id="email" required>
+                    <input type="text" class="@error('email') is-invalid border-danger @enderror" name="email" id="email" required>
+                       @if($errors->has('email'))
+                        <div class="invalid-feedback text-center fontsize-small">  The email field is required! Example: name@domain.com  </div>
+                        @endif 
                     <label for="email"> E-mail </label>
                 </div>
  
  
                 <div class="form-container">
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" class="@error('email') is-invalid border-danger @enderror"  name="password" id="password" required>
                     <label for="password"> Password </label>
+                    @if($errors->has('password'))
+                        <div class="invalid-feedback text-center fontsize-small"> The password field must have at least 8 characters! </div>
+                        @endif 
 
                         <div class="fontsize-small link-hover" id="password">
                             <a href="{{ asset('../reset-password') }}"> <p class="text-end mt-4 px-5"> Forgot Password? </p> </a>

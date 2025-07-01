@@ -20,6 +20,9 @@ Route::get('/courses', function () {
     return view('courses', ['page' => 'courses']);
 })->name('courses');
 
+Route::get('/new-password', function (){
+    return view('new-password', ['page' => 'new-password']);
+})->name('new-password');
 
 Route::get('/reset-password', function(){
     return view('reset-password', ['page' => 'reset-password']);
