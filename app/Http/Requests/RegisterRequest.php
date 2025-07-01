@@ -27,7 +27,7 @@ class RegisterRequest extends FormRequest
         // Verifica o método
         if($this->method() == 'POST' || $this->method() == 'PUT'){
             $request=[
-                'name' => ['required', 'max:255'],
+                'name' => ['required', 'string', 'max:255', 'regex:/^[\sa-zA-Z]*$/'],
                 'email' => ['required', 'email'],
                 'password' => ['required', Password::min(8)]
             ];

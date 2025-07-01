@@ -13,6 +13,8 @@ class CadastroController extends Controller
 
         if($request->method() == "POST"){
             $data = $request -> all();
+            
+            // Ajusta o valor de terms para true ou false, dependendo se o checkbox foi marcado.
             $data['terms'] = $request->has('terms');
 
             User::create($data);

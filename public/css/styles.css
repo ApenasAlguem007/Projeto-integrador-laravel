@@ -488,3 +488,84 @@ body {
  
 }
  
+
+/*  Home css */
+
+.container-home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border: 2.5px solid #ffffff;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 30px;
+    }
+ 
+    .titulo-home {
+        padding: 10px;
+        text-align: center;
+        color: rgb(255, 255, 255 , 0.8);
+        font-size: 4.25em;
+        margin-top: 20px;
+        width: 50%;
+        margin-left: 200px;
+       
+    }
+ 
+    .img-home {
+        width: 700px;
+        margin-right: 175px;
+    }
+   
+    #btn-home {
+        width: 60%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #2E3146;
+        color: white;
+        text-decoration: none !important;
+        text-align: center;
+        margin-left: 150px;
+    }
+ 
+    .titulo-corpo {
+        color: rgb(255, 255, 255 , 0.6);
+        font-size: 1.6em;
+    }
+ 
+    .caixa-texto {
+        margin: auto;
+        background-color: #252525;
+        width: 40%;
+        max-height: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+ 
+    .titulo-cursos {
+        font-size: 2em !important;
+    }
+ 
+    .img-cursos {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+ 
+    .caixa-img {
+        margin: auto;
+        width: 50%;
+        border-radius: 20px;
+        background-color: #303030;
+        margin-bottom: 20px;
+    }
+ 
+    .corpo-home {
+        border: 2.5px solid #ffffff;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        margin-bottom: 30px;
+    }
